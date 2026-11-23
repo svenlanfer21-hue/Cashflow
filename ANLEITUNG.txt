@@ -1,0 +1,19 @@
+CASHFLOW V1.2 – DESIGN-UPDATE (OHNE DATENMIGRATION)
+
+1. ZUERST in Cashflow unter Einstellungen ein JSON-Backup exportieren und privat sichern.
+2. GitHub Repo öffnen: https://github.com/svenlanfer21-hue/Cashflow
+3. theme.css und theme.js aus diesem ZIP im Hauptverzeichnis hochladen.
+4. sw.js durch den Inhalt der neuen sw.js ersetzen (nicht als sw1.js hochladen).
+5. index.html auf GitHub bearbeiten:
+   Im <head> direkt vor </head> einfügen:
+   <link rel="stylesheet" href="theme.css">
+   Unmittelbar nach <script src="app.js"></script> und vor </body> einfügen:
+   <script src="theme.js"></script>
+   Den Text NON PLUS ULTRA · V1.1 auf NON PLUS ULTRA · V1.2 ändern.
+6. Commit changes speichern. Einige Minuten warten, App neu starten oder im Browser neu laden.
+
+WICHTIG:
+- app.js NICHT ersetzen: alle gespeicherten Finanzdaten bleiben mit dem bestehenden localStorage-Schlüssel cashflow-v1 kompatibel.
+- Neue Gringotts-Karte ist eine DESIGN-VORSCHAU, noch kein separates Sparkonto.
+- Nicht die Browserdaten löschen oder die App deinstallieren, bevor das Backup sicher gespeichert ist.
+- Bestehende Daten sind lokal auf dem Gerät; GitHub enthält keine Kontodaten.
