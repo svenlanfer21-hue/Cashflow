@@ -1,0 +1,34 @@
+
+name: Cashflow APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Android-Projekt entpacken
+        run: |
+          unzip -o Cashflow_V2_0_Android_Projekt.zip -x '.github/*'
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+
+      - run: gradle :android-app:assembleDebug
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Cashflow-V2.0-Test-APK
+          path: android-app/build/outputs/apk/debug/*.apk
+          
