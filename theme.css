@@ -1,0 +1,110 @@
+:root{color-scheme:dark;--bg:#071321;--card:#10283a;--emerald:#49e7b2;--gold:#e7bb64;--text:#eef8fa;--muted:#b2c9d2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:radial-gradient(ellipse 85% 22% at 75% 0%,#16534488,transparent 75%),radial-gradient(ellipse 80% 30% at 105% 42%,#65471b55,transparent 80%),linear-gradient(155deg,#06111e,#0a2030 48%,#071321);background-attachment:fixed;color:var(--text);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;min-height:100vh}body:before{content:'';position:fixed;top:0;left:0;right:0;height:180px;pointer-events:none;background:linear-gradient(165deg,transparent 40%,#3df7ac1a 51%,transparent 54%),linear-gradient(169deg,transparent 63%,#ffc9631d 67%,transparent 70%);filter:blur(8px);z-index:0}main{position:relative;max-width:760px;padding:16px 15px 106px;margin:auto}h1{font-size:clamp(26px,6vw,38px);font-weight:800;letter-spacing:-.04em;margin:16px 0 20px;text-shadow:0 0 30px #4df4ac25}h1 small{display:block;font-size:12px;letter-spacing:.19em;font-weight:750;color:var(--gold)!important;margin:3px 0 0 45px;text-transform:uppercase}h3{font-size:19px;letter-spacing:-.02em}section{position:relative;overflow:hidden;background:linear-gradient(130deg,#102b3ccc,#102032ee 62%,#172634e8);border:1px solid #2a746c8a;box-shadow:0 12px 35px #0005, inset 0 1px #a2ffe016;border-radius:21px;padding:20px;margin:15px 0}#home>section:first-child{border-color:#30d8a677;box-shadow:0 10px 40px #0006,0 0 22px #20d59d16}#home>section:first-child:before{content:'';position:absolute;right:-80px;top:-100px;width:210px;height:220px;background:radial-gradient(circle,#18e5a51c,transparent 70%);pointer-events:none}.big{font-size:clamp(36px,9vw,53px);font-weight:850;color:var(--emerald);letter-spacing:-.045em;text-shadow:0 0 22px #25ef9f43;margin:8px 0 14px}.muted{color:var(--muted);line-height:1.6}.line{border-bottom:1px solid #6a9f9a35;padding:13px 0;gap:12px}.line strong{font-variant-numeric:tabular-nums}.tabs{position:fixed;bottom:0;left:0;right:0;z-index:10;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;padding:9px max(8px,calc((100vw - 740px)/2)) calc(9px + env(safe-area-inset-bottom));background:#071b28ed;backdrop-filter:blur(20px);border-top:1px solid #45cfac70;box-shadow:0 -6px 28px #0009}.tabs button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;min-height:55px;margin:0;padding:6px 1px;background:transparent;color:#c1d9db;border-radius:12px;font-size:clamp(9px,2.2vw,12px);font-weight:600}.tabs button:before{font-size:21px;line-height:1.1}.tabs button[data-tab=home]:before{content:'⌂'}.tabs button[data-tab=plan]:before{content:'▥'}.tabs button[data-tab=foodtab]:before{content:'▣'}.tabs button[data-tab=entries]:before{content:'⇄'}.tabs button[data-tab=recurring]:before{content:'▤'}.tabs button[data-tab=settings]:before{content:'⚙'}.tabs button.active{outline:0;background:#164637a8;color:var(--emerald);box-shadow:inset 0 0 0 1px #42dca85e,0 0 16px #18df9e18}.stat{background:linear-gradient(135deg,#103c3b,#152639);border:1px solid #3a8c7955;border-radius:15px}.stat strong{color:var(--emerald)}button:not(.tabs button){border-radius:12px;background:linear-gradient(135deg,#4de5ae,#79e8c2);color:#08271e;box-shadow:0 5px 15px #0003;padding:12px 15px}button.secondary{background:#25465b;color:#eaf5f7}input,select{background:#091827;border:1px solid #527778;border-radius:12px;color:#f3f9fb;min-height:47px}input:focus,select:focus{outline:2px solid #42d6aa77;outline-offset:1px}label{color:#d7e9e8;font-weight:650}.progress{height:14px;background:#264357;border-radius:30px}.progress>div{background:linear-gradient(90deg,#12a47f,#5af1b8);box-shadow:0 0 12px #3df2b59c}.gold-card{background:linear-gradient(125deg,#2e2b28,#1b2630 65%,#3c3023);border:1px solid #cba054a6;box-shadow:0 0 24px #d6a54916,inset 0 1px #ffe1a021}.gold-card h3,.gold-card .gold-value{color:var(--gold)}.gold-card .muted{color:#decba9}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini-grid .stat{padding:14px}.mini-grid .stat strong{font-size:clamp(17px,4vw,24px)}.section-title{display:flex;align-items:center;gap:8px}.section-title:before{content:'✦';color:var(--gold)}.gold-rule{height:2px;background:linear-gradient(90deg,#e5b45a,transparent);margin:12px 0}.milestone{display:flex;align-items:center;gap:10px;padding:8px 0;color:#e2d6bb}.milestone:before{content:'○';color:var(--gold);font-size:22px}footer{color:var(--muted)}@media(max-width:390px){section{padding:16px}.tabs button{font-size:9px}.mini-grid{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:no-preference){section{animation:rise .35s ease both}@keyframes rise{from{opacity:.6;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* V1.2 Fusion: visual-only extension */
+body{background:radial-gradient(ellipse 90% 24% at 62% -4%,#007f6650,transparent 78%),radial-gradient(ellipse 85% 38% at 112% 38%,#95691e29,transparent 75%),linear-gradient(165deg,#030d17,#071d29 53%,#04101d);}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.7;background:radial-gradient(ellipse 95% 3% at 75% 7%,#28ffb333,transparent 85%),radial-gradient(ellipse 95% 3% at 88% 11%,#f5b63c2c,transparent 85%);filter:blur(10px)}
+main{max-width:900px}h1{font-size:clamp(32px,7vw,48px);margin-bottom:23px}h1 small{letter-spacing:.24em}section{background:linear-gradient(140deg,#092b34e8,#0c1d2deb 62%,#15242de8);border-color:#20b9918a;box-shadow:0 12px 32px #0007,inset 0 1px #78ffd51a}#home>section:first-child{background:linear-gradient(116deg,#073b38e9,#0c2535e9 57%,#193225e8);border-color:#20e8ac9c;box-shadow:0 12px 35px #0007,0 0 22px #14ec9825,inset 0 0 22px #1bcd8515}#home>section:first-child .big{font-size:clamp(48px,11vw,75px);margin:12px 0 23px;line-height:1.15}#home>section:first-child .muted:first-child{font-size:14px;font-weight:600}.mini-grid{gap:14px}.mini-grid .stat{min-height:150px;display:flex;flex-direction:column;justify-content:center;padding:20px;border-radius:23px}.mini-grid .stat strong{font-size:clamp(21px,5vw,33px);line-height:1.3}.mini-grid .gold-card{background:radial-gradient(circle at 15% 45%,#9b6b2550,transparent 45%),linear-gradient(115deg,#322a20,#151e28 67%,#382c1e);border-color:#eac46c;box-shadow:0 0 28px #f3ba4433,inset 0 0 24px #b7802522}.mini-grid .gold-card .gold-value{font-size:clamp(22px,5vw,31px)}.mini-grid .gold-card .muted{color:#f5dc9f}.hero-card-label{font-size:14px;letter-spacing:.03em;color:#c9dedc}.gold-title{color:#f5cf7b;font-weight:850;text-shadow:0 0 18px #d99d3e55}.hero-balance{color:#f4fcfb!important}.hero-section{border-color:#1edca4b3!important}.hero-section h3{font-size:clamp(20px,4.5vw,28px)}.hero-section .progress{height:18px;box-shadow:inset 0 2px 6px #0006}.hero-section .progress>div{box-shadow:0 0 16px #16ffad9a}.hero-metrics{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:15px;font-size:14px}.hero-metrics strong{color:#f2f9f8}.dashboard-lower{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;align-items:stretch}.dashboard-lower section{margin:0}.dashboard-lower .gold-card{background:radial-gradient(circle at 90% 90%,#aa792b36,transparent 55%),linear-gradient(135deg,#2a291e,#0d2631);border-color:#e1b655;box-shadow:0 0 22px #dfac3d2b}.milestone:before{content:'◯'}.dashboard-lower .line{font-size:14px}.nav-emblem{display:block;font-size:22px;line-height:1.2}.tabs button:before{display:none}.tabs button{gap:4px;min-height:61px}.tabs button.active{border:1px solid #25e2a0;box-shadow:0 0 18px #0cf4a530,inset 0 0 14px #20f6a51a}.tabs button[data-tab=home] .nav-emblem{color:#47efb4}.tabs button[data-tab=settings] .nav-emblem{color:#e7bb64}#visualExtras{display:block}.milestone-date{color:#f5d17c;font-size:24px;font-weight:800;margin:10px 0}.gold-card .milestone{font-size:14px}#home>section:nth-child(2){margin-top:17px}@media(max-width:570px){.dashboard-lower{grid-template-columns:1fr}.mini-grid .stat{min-height:130px;padding:15px}.mini-grid .stat strong{font-size:clamp(20px,5vw,27px)}.hero-metrics{font-size:12px}.tabs button{font-size:9px}}
+
+/* V1.2.1 Dashboard Compact – mobile-only, presentation only */
+#home>section:first-child{padding:18px 20px;margin-bottom:12px}
+#home>section:first-child .big{font-size:clamp(38px,9vw,58px);margin:7px 0 12px;line-height:1.1}
+#home>section:first-child .line{padding:7px 0;gap:8px}
+#home>section:first-child .line span{min-width:0;overflow-wrap:anywhere}
+#home>section:first-child .line strong{white-space:nowrap;flex-shrink:0}
+#home>section:first-child p.muted{font-size:12px;line-height:1.45;margin:10px 0 0}
+#visualExtras .mini-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+#visualExtras .mini-grid .stat{min-width:0;min-height:116px;padding:14px 12px;border-radius:18px;overflow:hidden}
+#visualExtras .mini-grid .stat strong{font-size:clamp(17px,4.7vw,27px);line-height:1.22;overflow-wrap:anywhere;word-break:normal}
+#visualExtras .mini-grid .gold-card .gold-value{font-size:clamp(15px,3.8vw,23px);hyphens:auto;overflow-wrap:anywhere;white-space:normal}
+#visualExtras .mini-grid .stat .muted{font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+#visualExtras .hero-section{padding:16px 18px}
+#visualExtras .hero-section h3{margin-bottom:7px}
+#visualExtras .dashboard-lower{gap:10px}
+#visualExtras .dashboard-lower section{padding:16px 18px}
+#visualExtras .dashboard-lower .milestone{padding:5px 0}
+#home>section:last-child{padding:17px 20px}
+@media(max-width:570px){
+ main{padding:12px 14px 95px}
+ h1{margin:8px 0 13px;font-size:clamp(28px,7vw,38px)}
+ h1 small{font-size:11px;letter-spacing:.15em}
+ #home>section:first-child{padding:16px;margin-top:10px}
+ #home>section:first-child .big{font-size:clamp(37px,10vw,51px)}
+ #visualExtras .mini-grid .stat{min-height:112px;padding:12px 10px}
+ #visualExtras .mini-grid .stat strong{font-size:clamp(16px,4.5vw,24px)}
+ #visualExtras .mini-grid .gold-card .gold-value{font-size:clamp(14px,3.7vw,19px)}
+ #visualExtras .dashboard-lower{grid-template-columns:1fr}
+ .tabs{padding-left:5px;padding-right:5px}
+ .tabs button{min-width:0;overflow:hidden}
+}
+
+/* Cashflow V1.3 – one-glance dashboard, visual-only patch */
+@media(max-width:650px){
+ main{padding:8px 12px 88px}
+ h1{font-size:30px!important;margin:5px 0 8px!important;line-height:1.12}
+ h1 small{display:none!important}
+ #home>section:first-child{padding:12px 14px!important;margin:8px 0!important;border-radius:16px}
+ #home>section:first-child .big{font-size:clamp(33px,9vw,45px)!important;margin:2px 0 6px!important;line-height:1.04!important}
+ #home>section:first-child .line{padding:3px 0!important;font-size:12px!important;line-height:1.25}
+ #home>section:first-child .line strong{font-size:12px!important}
+ #home>section:first-child p.muted{font-size:10px!important;line-height:1.25!important;margin:5px 0 0!important}
+ #visualExtras .mini-grid{gap:7px!important}
+ #visualExtras .mini-grid .stat{min-height:75px!important;padding:9px!important;border-radius:13px!important}
+ #visualExtras .mini-grid .stat strong{font-size:clamp(14px,3.8vw,19px)!important}
+ #visualExtras .mini-grid .gold-card .gold-value{font-size:clamp(12px,3.3vw,16px)!important}
+ #visualExtras .mini-grid .stat .muted{font-size:10px!important;line-height:1.15!important}
+ #visualExtras .hero-section{padding:10px 13px!important;margin:8px 0!important;border-radius:16px}
+ #visualExtras .hero-section h3{font-size:17px!important;margin:0 0 5px!important}
+ #visualExtras .hero-section .progress{height:10px!important}
+ #visualExtras .hero-metrics{margin-top:6px!important;gap:5px!important;font-size:11px!important}
+ #visualExtras .dashboard-lower{display:block!important}
+ #visualExtras .dashboard-lower section{padding:10px 13px!important;margin:8px 0!important;border-radius:16px}
+ #visualExtras .dashboard-lower h3{font-size:17px!important;margin:0 0 5px!important}
+ #visualExtras .dashboard-lower .line{padding:4px 0!important;font-size:12px!important}
+ section{margin:8px 0!important}
+ .tabs{padding-top:5px;padding-bottom:calc(5px + env(safe-area-inset-bottom))}
+ .tabs button{min-height:48px!important;gap:2px!important}
+ .nav-emblem{font-size:19px!important}
+}
+/* Remove the decorative monthly-check card, not any financial rules. */
+#visualExtras section:has(.milestone-date),
+#visualExtras .gold-card:has(.milestone-date){display:none!important}
+
+/* V1.3.1: Golden Girokonto, no Gringotts card, no forecast explanatory paragraph */
+#home>section:first-child p.muted{display:none!important}
+#visualExtras .mini-grid{grid-template-columns:minmax(0,1fr)!important}
+#visualExtras .mini-grid>.stat:not(.gold-card){
+ background:radial-gradient(circle at 8% 25%,#98702b40,transparent 55%),linear-gradient(120deg,#30271d,#162b31 68%,#392c1e)!important;
+ border:1px solid #eac46c!important;box-shadow:0 0 22px #e7b44a2a,inset 0 1px #ffe5a042!important;
+ min-height:75px!important;
+}
+#visualExtras .mini-grid>.stat:not(.gold-card) strong{color:#f4d183!important}
+#visualExtras .mini-grid>.stat:not(.gold-card) .muted{color:#f0d8a8!important}
+#visualExtras .mini-grid>.gold-card{display:none!important}
+
+/* V1.4 Final Compact */
+#visualExtras .mini-grid>.stat:not(.gold-card){min-height:0!important;padding:8px 10px!important;gap:5px!important;display:flex!important}
+.balance-head,.balance-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%}
+.balance-head .hero-card-label{color:#f0d8a8;font-size:13px}
+.balance-controls input{flex:1;min-width:0;width:0;margin:0!important;padding:6px 9px!important;min-height:36px!important;height:36px;font-size:14px;border-color:#bca061}
+.balance-controls button{flex:0 0 auto;width:auto!important;margin:0!important;padding:6px 10px!important;min-height:36px;background:#d8b76b!important;color:#171b20!important;font-size:12px}
+#visualExtras .hero-section .line{padding:3px 0;font-size:12px}
+#home>section:first-child .muted:first-child{font-size:13px}
+@media(max-width:650px){#home>section:first-child{padding:9px 12px!important}#visualExtras .hero-section,#visualExtras .dashboard-lower section{padding:8px 11px!important}main{padding-bottom:72px} }
+
+/* V1.4.1 – 5% larger than V1.4, mobile dashboard only */
+@media(max-width:650px) and (min-height:650px){
+ #home>section:first-child{padding:9.45px 12.6px!important}
+ #home>section:first-child .line{font-size:12.6px!important;padding:3.15px 0!important}
+ #home>section:first-child .line strong{font-size:12.6px!important}
+ #home>section:first-child .big{font-size:clamp(34.65px,9.45vw,47.25px)!important}
+ #visualExtras .mini-grid>.stat:not(.gold-card){padding:8.4px 10.5px!important}
+ .balance-head .hero-card-label{font-size:13.65px}
+ .balance-controls input{min-height:37.8px!important;height:37.8px;font-size:14.7px}
+ .balance-controls button{min-height:37.8px;font-size:12.6px}
+ #visualExtras .hero-section,#visualExtras .dashboard-lower section{padding:8.4px 11.55px!important}
+ #visualExtras .hero-section h3,#visualExtras .dashboard-lower h3{font-size:17.85px!important}
+ #visualExtras .hero-section .line,#visualExtras .dashboard-lower .line{font-size:12.6px!important}
+ #visualExtras .hero-metrics{font-size:11.55px!important}
+}
+footer{display:none!important}
