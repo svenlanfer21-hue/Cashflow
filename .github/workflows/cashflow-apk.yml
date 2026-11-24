@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -21,9 +22,8 @@ jobs:
 
       - name: Android SDK einrichten
         uses: android-actions/setup-android@v3
-
-      - name: Android SDK installieren
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        with:
+          packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
 
       - uses: gradle/actions/setup-gradle@v4
         with:
