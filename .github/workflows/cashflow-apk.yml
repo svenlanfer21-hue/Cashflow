@@ -19,16 +19,22 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Android SDK einrichten
+        uses: android-actions/setup-android@v3
+
+      - name: Android SDK installieren
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
 
-      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
-
-      - run: gradle :android-app:assembleDebug
+      - name: APK erstellen
+        run: gradle :android-app:assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
           name: Cashflow-V2.0-Test-APK
           path: android-app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
           
